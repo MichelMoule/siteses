@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Site Web Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Site Web Express</h1>
+            <div class="right">
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="presentation.html">Présentation</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+        </nav>
+
+
+    <section class="presentation first">
+        <div class="product-presentation">
+            <h2>Passez à l'action dès maintenant</h2>
+            <form id="contact-form">
+                <label for="name">Votre nom:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Adresse e-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="website-type">Type de site web:</label>
+                <select id="website-type" name="website-type">
+                    <option value="portfolio">Portfolio</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="blog">Blog</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <label for="details">Détails du projet:</label>
+                <textarea id="details" name="details" rows="5" required></textarea>
+
+                <button type="submit">Soumettre</button>
+            </form>
+            <div id="confirmation-message"></div>
+
+            
+        </div>
+
+        </div>
+    </section>
+</header>
+    <footer>
+        <div class="column">
+            <h3>Contact</h3>
+            <p>contact@sitewebexpress.fr</p>
+            <p>Contactez-nous</p>
+        </div>
+        <div class="column">
+            <h3>Réseaux sociaux</h3>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+</body>
+</html>
